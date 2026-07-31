@@ -11,7 +11,8 @@ import NewsTicker from "./components/NewsTicker";
 import SearchVerify from "./components/SearchVerify";
 import { useSocket } from "./hooks/useSocket";
 
-const API_URL = import.meta.env.VITE_API_URL || "https://your-backend.onrender.com";
+// const API_URL = import.meta.env.VITE_API_URL || "https://your-backend.onrender.com";
+const API_URL = "http://localhost:4000";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
